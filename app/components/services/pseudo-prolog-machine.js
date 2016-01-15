@@ -80,4 +80,26 @@ class PseudoPrologMachine {
 
         return predicate;
     }
+
+    isVariable(param) {
+        return param[0].toUpperCase() == param[0];
+    }
+
+//    executeQuery(String) {
+//        var queryPredicate = parsePredicateFromText(String);
+//
+//        var variables = [];
+//        for(var i=0; i<queryPredicate.parameters.length; i++) {
+//            var param = queryPredicate.parameters[i];
+//            if(param[0].toUpperCase() == param[0]) {
+//                variables.push({
+//                    name: param,
+//                    solution: "_"+param
+//                });
+//            }
+//        }
+//
+//        var solutions = [];
+//
+//    }
 }
