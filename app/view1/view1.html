@@ -1,0 +1,25 @@
+<p>This is the partial for view 1.</p>
+<form name="form">
+    Drop files: <div ngf-drop ng-model="files" class="drop-box">Drop</div>
+
+    <div class="button" ngf-select ng-model="file" name="file"
+         ngf-max-size="20MB"
+        >Select</div>
+
+    <button type="submit" ng-click="submit()">submit</button>
+</form>
+<div ng-if="showMeDaProlog">
+    <span>
+        Baza de cunostiinte:
+    </span>
+    <ul>
+        <li ng-repeat="singleLine in showMeDaProlog">
+            <span>{{singleLine}}</span>
+        </li>
+    </ul>
+    <br />
+    <form>
+        <input type="text" ng-model="query" />
+        <button type="button" ng-click="runQuery(query)">Butoane</button>
+    </form>
+</div>
